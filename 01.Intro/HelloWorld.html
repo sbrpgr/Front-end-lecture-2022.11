@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>     <!-- HTML 5 의미 -->
+<html lang="ko">    <!-- 웹 페이지의 사용 언어를 구글 검색 엔진에 제공 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 반응형 웹 -->
     <title>Hello World</title>
     <script>
-        function a(){alert("경고창을 띄웁니다");
-
-    }</script>
+        function a() {
+            alert("경고창을 띄웁니다.");
+        }
+    </script>
     <script src="hello.js"></script>
     <style>
         body    {
@@ -17,12 +21,14 @@
     </style>
     <link rel="stylesheet" href="hello.css">
 </head>
-<body onload="b()">
+<body>
     <h1>Hello World</h1>
+<body onload="b()">
+    <h1 style="color: blue; background: grey;">Hello World</h1>
     <hr>
     <p>하나의 문단입니다.</p>
-    <h3 title="header">H3 태그입니다</h3>
-    <img src="../img/다운로드.jpg" alt="개">
-    <!-- alt + shift + a -->
+    <h3 title="header">H3 태그입니다.</h3>
+    <img src="../img/다운로드.jpg" alt="고양이">
+    <!-- 주석입니다. (Alt-Shift-A, Ctrl-/) -->
 </body>
 </html>
