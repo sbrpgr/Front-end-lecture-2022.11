@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  max-width: 1540px;
+  margin: 10px auto;
+  padding: 20px;
+  background-image: url("https://cdn.crowdpic.net/detail-thumb/thumb_d_EC65D8D860ED7BF8C914F4A155B7E1AC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(87, 85, 85);
+}
+
+.header {
+  padding: 20px;
+  font-size: 0;
+  font-weight: 700;
+}
+
+.header-information {
+  display: inline-block;
+  width: calc(100% - 250px);
+  font-size: 20px;
+}
+
+.name {
+  font-size: 100px;
+  margin: 0 0 10px 0;
+}
+
+.english-name {
+  font-size: 44px;
+  color: #034694;
+  margin: 0 0 10px 0;
+}
+
+.detail {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 32px;
+}
+
+.portrait {
+  display: inline-block;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.email-emoji {
+  width: 30px;
+}
+
+.address-emoji {
+  width: 20px;
+}
+
+.telephone-number-emoji {
+  width: 40px;
+}
+
+.columns {
+  font-size: 0;
+}
+
+.column {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+  font-size: 24px;
+}
+
+.column-one {
+  width: 60%;
+}
+
+.column-two {
+  width: 40%;
+}
+
+.job{
+  text-indent: 50px;
+}
+
+.school{
+  text-indent: 50px;
+}
+
+.say{
+  text-align: center;
+}
+
+.row {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.row-title {
+  margin: 0;
+  font-size: 52;
+  color: #034694;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #034694;
+}
+
+.daily-life-donut {
+  width: 600px;
+  height: 600x;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
