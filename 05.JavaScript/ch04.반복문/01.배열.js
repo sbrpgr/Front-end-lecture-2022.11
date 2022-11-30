@@ -14,3 +14,12 @@ for (let item of array)
 
 console.log(array);
 console.log(array.toString());      // [ ] 가 빠진 상태
+
+console.log('-------------------------------------')
+const array1 = [11,34.3,'아침', '사과', true, false];
+console.log(typeof array)
+console.log(array1.length)
+
+for(let i of array1)
+console.log(i)
+console.log(array1.toString())

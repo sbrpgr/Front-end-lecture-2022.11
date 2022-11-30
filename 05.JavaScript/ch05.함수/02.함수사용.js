@@ -29,16 +29,16 @@ function getDivisors(num) {
     return divisors;
 }
 
-const sumArray = array => {
-    let dSum = 0;
-    for (let div of array)
-        dSum += div;
-    return dSum;
-}
+// const sumArray = array => {
+//     let dSum = 0;
+//     for (let div of array)
+//         dSum += div;
+//     return dSum;
+// }
 
-for (let num = 2; num <= 10000; num++) {
-    const array = getDivisors(num);
-    const arrSum = sumArray(array);
-    if (num == arrSum) 
-        console.log(num, ':', array.toString());
-}
+// for (let num = 2; num <= 10000; num++) {
+//     const array = getDivisors(num);
+//     const arrSum = sumArray(array);
+//     if (num == arrSum) 
+//         console.log(num, ':', array.toString());
+// }

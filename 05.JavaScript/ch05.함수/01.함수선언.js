@@ -11,3 +11,7 @@ console.log(anonySum(3, 4));
 
 const arrowSum = (a, b) => a + b;       // 화살표 함수, 람다 함수
 console.log(arrowSum(3, 4));
+
+const aa = a=> a*a
+
+console.log(aa(99))

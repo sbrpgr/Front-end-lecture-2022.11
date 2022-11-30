@@ -18,3 +18,13 @@ while (true) {
         break;
 }
 console.log(cumSum);
+
+console.log('*************************************')
+
+let sum = 0;
+while (sum <=30) {
+    const dic = Math.ceil(Math.random()*6);
+    console.log(dic);
+    sum += dic;
+}
+console.log(sum,`\n`)
