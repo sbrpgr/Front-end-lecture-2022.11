@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>자기소개</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fdb840a8cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        alert('반갑습니다!');
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const h1 = document.getElementById("wish");
+          h1.textContent = "하고싶은일 목록";
+          const input = document.getElementById("input");
+          const button = document.getElementById("button");
+          const boxbox = document.getElementById("boxbox");
+            
+          button.addEventListener("click", () => {
+            const div = document.createElement("div");
+            boxbox.appendChild(div);
+  
+            if (input.value !== "") {
+              const checkbox = document.createElement("input");
+              checkbox.type = "checkbox";
+              checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                  div.style.textDecoration = "line-through";
+                } else {
+                  div.style.textDecoration = "";
+                }
+              });
+              div.appendChild(checkbox);
+  
+              const span = document.createElement("span");
+              span.textContent = input.value;
+              input.value = "";
+              div.appendChild(span);
+  
+              const deleteButton = document.createElement("button");
+              deleteButton.textContent = "제거하기";
+              deleteButton.addEventListener("click", () => {
+                div.parentNode.removeChild(div);
+              });
+              div.appendChild(deleteButton);
+            }
+          });
+        });
+      </script>
+    <style>
+        * {text-align: center;}
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-dark mt-0"
+      style="background-color: #748cab"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">자기소개</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">바이오</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">가보고 싶은 곳</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">좋아하는 음식</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">취미</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >SNS</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="https://velog.io/">Blog</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.instagram.com/"
+                    >Instagran</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://github.com/">github</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid p-5 text-white text-center"
+      style="background-color: #3e5c76"
+    >
+      <h1>자기소개 페이지</h1>
+      <p>여러가지 자기소개 하기</p>
+    </div>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-xxl-3" style="text-align: center">
+          <h3 style="text-align: center">나</h3>
+          <img
+            src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80"
+            class="rounded"
+            alt="picsum"
+            width="304"
+            height="236"
+          />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+          <form action="/action_page.php">
+            <div class="mb-3 wishList"></div>
+          </form>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xxl-3" style="text-align: center">
+          <h3 style="text-align: center">취미</h3>
+          <img
+            src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1244&amp;q=80"
+            width="304"
+            height="236"
+          />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xxl-3" style="text-align: center">
+          <h3 style="text-align: center">여행</h3>
+          <img
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
+            width="304"
+            height="236"
+          />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xxl-3" style="text-align: center">
+          <h3 style="text-align: center">음식</h3>
+          <img
+            src="https://images.unsplash.com/photo-1495046024427-c8efd65f3d7f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80"
+            class="rounded"
+            alt="picsum"
+            width="304"
+            height="236"
+          />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-2">
+        <div class="col-12 justify-content-center">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    
+                </div>
+                <div id="boxbox">
+                    <h1 id="wish"></h1>
+                    <input type="text" id="input">
+                    <button id="button">추가하기</button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner p-5">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/1000/400?q=5" alt="Los Angeles" class="d-block" style="width:100%; height:auto;">
+                        <div class="carousel-caption">
+                            <h3>Los Angeles</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                      <img src="https://picsum.photos/1000/400?q=4" alt="Los Angeles" class="d-block" style="width:100%">
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item active">
+                      <img src="https://picsum.photos/1000/400?q=1" alt="Los Angeles" class="d-block" style="width:100%">
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1000/400?q=2" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Chicago</h3>
+                            <p>Thank you, Chicago!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1000/400?q=3" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>New York</h3>
+                            <p>We love the Big Apple!</p>
+                        </div>  
+                    </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <p></p>
+            </div>
+        <div>
+            
+        </div>
+    </div>
+  </body>
+
+</html>
