@@ -11,5 +11,5 @@ window.onload = function() {
         const now = new Date();
         document.getElementById('date').innerHTML = myDatetime(now).substring(2,10);
         document.getElementById('time').innerHTML = myDatetime(now).substring(11);
-    }, 1000);
+    }, 1000); 
 }
